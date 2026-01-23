@@ -1,0 +1,33 @@
+# --- [.NET / C#] ---
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.suo
+*.user
+*.sln.docstates
+
+# --- [Avalonia UI] ---
+# Игнорируем специфические временные файлы превьюера, если они появятся
+.avalonia/
+
+# --- [Visual Studio] ---
+.vs/
+*.userosscache
+*.sln.idsymb
+*.cache
+*.opendb
+*.db-shm
+*.db-wal
+
+# --- [User Data / Game Files] ---
+# Игнорируем твой файл с рекордами, чтобы он не забивал репозиторий при каждом тесте
+bin/scoreLeaders.txt
+scoreLeaders.txt
+
+# --- [OS / IDE] ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

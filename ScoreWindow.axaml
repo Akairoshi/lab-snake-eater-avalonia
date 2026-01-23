@@ -1,0 +1,41 @@
+    <Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="SnakeEater.ScoreWindow"
+        Title="Avalonia SnakeEater"
+        Width="400" Height="400"
+        CanResize="False"
+        SystemDecorations="None"
+        Background="Black"
+        WindowStartupLocation="CenterScreen">
+        <Border Padding="5" Background="White" Margin="4">
+        <StackPanel Orientation="Vertical" Spacing="15" Margin="10"
+                    Background="White">
+            <DockPanel HorizontalSpacing="15" HorizontalAlignment="Stretch"
+                       Width="130">
+				<Button Name="Exit_btn" Content="Exit" 
+                        DockPanel.Dock="Left"
+                        Click="ExitGame"/>
+                <Button Name="Restart_btn" Content="Restart"
+                        Click="Restart"
+                        DockPanel.Dock="Right"/>
+            </DockPanel>
+            <TextBlock HorizontalAlignment="Center">--- SCORES TAB ---</TextBlock>
+            <TextBlock HorizontalAlignment="Center" Name="score_TextBlock">Your score - [_score]</TextBlock>
+            <TextBlock HorizontalAlignment="Stretch">NAME | SCORES</TextBlock>
+		    <ScrollViewer VerticalScrollBarVisibility="Auto" Height="160">
+                <TextBlock Name="Score_TextBlock" 
+                           TextWrapping="Wrap"
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Top"/>
+            </ScrollViewer>
+            <DockPanel HorizontalAlignment="Center" HorizontalSpacing="10">
+			    <TextBox Name="name_TextBox" Width="200" 
+                        Watermark="Enter your name..."/>
+                <Button Width="126" DockPanel.Dock="Right"
+                        Name="Save_btn"
+                        Click="Save"
+                        Content="Save"/>
+            </DockPanel>
+        </StackPanel>
+        </Border>
+</Window>

@@ -1,0 +1,19 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="SnakeEater.GameWindow"
+        Title="Avalonia SnakeEater"
+        Width="400"
+        Height="455"
+        KeyDown="OnKeyDown"
+        CanResize="False"
+        SystemDecorations="None"
+        WindowStartupLocation="CenterScreen">
+    
+    <StackPanel>
+        <TextBlock Name="ScoreCount" FontWeight="Black" 
+                   HorizontalAlignment="Center"
+                   Margin="0,20,0,0"
+                   Height="35" />
+        <Canvas Name="GameCanvas" Background="Black" Width="400" Height="400"/>
+    </StackPanel>
+</Window>
