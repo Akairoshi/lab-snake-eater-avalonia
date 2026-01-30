@@ -3,11 +3,6 @@
 A classic "Snake" game developed in C# using the Avalonia UI cross-platform framework.
 This project was created for educational purposes to practice Object-Oriented Programming (OOP) and graphical user interface (GUI) development.
 
-## Tech Stack
-* **Language:** C# 12 (.NET 9)
-* **Framework:** Avalonia UI 11.3
-* **Data Storage:** File System (System.IO)
-
 ## Architectural Features
 * **Immutability:** Used **Records** to handle game grid coordinates securely.
 * **Game Loop:** Implemented via **DispatcherTimer** for consistent frame updates.
