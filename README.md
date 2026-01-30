@@ -15,11 +15,6 @@ This project was created for educational purposes to practice Object-Oriented Pr
 2. Clone this repository.
 3. Run the command: `dotnet run`.
 
-## Roadmap
-- [ ] **Rendering Optimization:** Replace full `Canvas` clearing with an Object Pooling pattern to update existing object positions.
-- [ ] **Refactoring:** Transition to the **MVVM** pattern to decouple business logic from the UI.
-- [ ] **UI/UX:** Add custom window chrome and animations for a more modern look.
-
 ## Project Structure
 * `GameWindow.axaml`: The main game arena and logic.
 * `ScoreWindow.axaml`: High score display and data entry.
